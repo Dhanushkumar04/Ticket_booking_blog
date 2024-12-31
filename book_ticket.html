@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="book.jpg">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Your Ticket</h1>
+            <p>Fill in the details below to reserve your spot for the event.</p>
+        </div>
+    </header>
+
+    <section class="booking-form">
+        <div class="container">
+            <form id="ticketForm" class="form-box">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Event Type</label>
+                    <select id="event" name="event" required>
+                        <option value="Concert">Concert</option>
+                        <option value="Movie">Movie</option>
+                        <option value="Sports Event">Sports Event</option>
+                        <option value="Theatre Play">Theatre Play</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Event Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Tickets Remaining: <span id="ticketsRemaining">100</span></p>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ticket Booking Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
